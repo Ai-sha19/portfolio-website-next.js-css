@@ -1,0 +1,158 @@
+.contact-container {
+    max-width: 96rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem;
+    margin: 0 auto;
+    color: white;
+}
+
+/* Left side with spacing and styles */
+.contact-left {
+    flex: 1;
+    padding: 2rem;
+}
+
+.contact-heading {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 400;
+}
+
+.contact-subtext {
+    color: #bababa;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    max-width: 35rem;
+}
+
+.contact-subtext span {
+    display: block;
+}
+
+.contact-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.contact-info-icon {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+/* Social icons aligned in one row */
+.social-icons {
+    gap: 1rem;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.fiverr-icon {
+    color: white;
+    font-size: 2.75rem;
+    transition: color 0.3s ease;
+}
+
+.icon:hover,
+.fiverr-icon:hover {
+    color: #ccc;
+}
+
+/* Right side form */
+.contact-form {
+    flex: 1;
+    padding: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.contact-input,
+.contact-textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #87CEEB;
+    border-radius: 5px;
+    color: white;
+    background-color: #333;
+    outline: none;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+    border-color: #FFD700;
+    box-shadow: 0 0 5px #FFD700;
+}
+
+.contact-textarea {
+    height: 8rem;
+    resize: none;
+}
+
+.send-btn {
+    background: linear-gradient(to bottom, #46d1ca, #3283c6);
+    padding: 0.75rem 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.send-btn:hover {
+    background: linear-gradient(to bottom, #40c3bc, #2b6cb0);
+}
+
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .contact-heading {
+        font-size: 2rem;
+    }
+
+    .contact-subtext {
+        font-size: 1rem;
+    }
+
+    .send-btn {
+        width: 100%;
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .contact-left,
+    .contact-form {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .contact-info {
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
