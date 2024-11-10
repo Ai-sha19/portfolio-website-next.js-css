@@ -8,7 +8,15 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-left">
-        <img className="logo" src="../Aisha-logo.png" alt="logo" />
+        {/* <img className="logo" src="../Aisha-logo.png" alt="logo" /> */}
+
+        <Image
+          src="/Aisha-logo.png"
+          alt="logo"
+          width={150}
+          height={150}
+          className="logo"
+        />
         <div className="verticalLine"></div>
         <span className="text">© All rights reserved 2024</span>
       </div>

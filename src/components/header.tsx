@@ -5,6 +5,8 @@ import "../style/header.css";
 import { AiOutlineCloudDownload } from 'react-icons/ai';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
+import Image from 'next/image';
+
 
 export default function Header() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +14,15 @@ export default function Header() {
     return (
         <header className="header">
             <div>
-                <img className="logo" src="../Aisha-logo.png" alt="logo" />
+                {/* <img className="logo" src="../Aisha-logo.png" alt="logo" /> */}
+
+                <Image
+                    src="/Aisha-logo.png"
+                    alt="logo"
+                    width={150}
+                    height={150}
+                    className="logo"
+                />
             </div>
             <nav className="nav">
                 {/* Hamburger icon for mobile */}
