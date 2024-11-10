@@ -13,7 +13,7 @@ const About = () => {
       {/* Left */}
       <div className='left'>
         {/* <img src="/about-pic.jpg" alt="about" /> */}
-        <Image src= "/about-pic.jpg" alt='about' width={500} height={300}></Image>
+        <Image className='image' src= "/about-pic.jpg" alt='about' width={500} height={400}></Image>
       </div>
       {/* Right */}
       <div className='right'>

@@ -111,6 +111,7 @@
         gap: 2rem;
 
     }
+   
 }
 
 @media (max-width: 1024px) {
@@ -120,9 +121,9 @@
         padding: 2rem;
     }
 
-    .left img {
+    .left .image {
         width: 100%;
-        max-width: 25rem;
+        max-width: 30rem;
     }
 
     .para {
@@ -131,6 +132,11 @@
 }
 
 @media (max-width: 768px) {
+    .left .image {
+        width: 100%;
+        max-width: 30rem;
+    }
+
     .para {
         width: 100%;
         font-size: 1rem;
@@ -141,4 +147,11 @@
         font-size: 1.8rem;
     }
 
+}
+
+@media (max-width: 414px) {
+   
+h4{
+    text-align: left;
+}
 }
